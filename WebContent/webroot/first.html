@@ -37,10 +37,27 @@ element.style {
     left: 50%;
     margin-left: -455px;
 }
-
+.topbar .box.top.logoRight {
+    width: 111px;
+    height: 48px;
+    background-position: -196px -159px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 509px;
+    margin-top: -24px;
+}
+a:hover {
+    color: #039;
+}
+.sp {
+    background:url("../WEB-INF/imgs/nnusymbol.jpg" );
+    background-repeat:no-repeat;
+}
 .topbar .navbar .nav .navLi {
     width: 85px;
     position: relative;
+    
 }
 .topbar .navbar .nav>li {
     float: left;
@@ -48,16 +65,31 @@ element.style {
     font-size: 16px;
     margin-left: 35px;
     cursor: pointer;
+    
 }
-ul, li {
+.navbar ul, li {
     list-style: none outside none;
+    
 }
 
-li {
+.navbar li {
     display: list-item;
     text-align: -webkit-match-parent;
+    
 }
-
+.navbar ul li ul{position:absolute;display:none;top:60px;padding-bottom:15px;left:-35px;}
+.navbar ul li ul li{width:120px;float:left;position:relative;margin:none;padding:0px;}
+.navbar ul li ul li a{border-right:none;border-top:1px;}
+.navbar ul li:hover ul{
+	display:block;
+}
+.navLi{
+	position:absolute;
+	padding:0px;
+	background-color:transparent;
+}
+.navLi li{
+	line-height:36px;}
 ul, menu, dir {
     display: block;
     list-style-type: disc;
@@ -76,12 +108,11 @@ ul, menu, dir {
 div {
     display: block;
 }
-
-
 body {
     font-size: 14px;
     color: #333;
 }
+
 </style>
 </head>
 <body>
@@ -121,9 +152,8 @@ body {
  	        		    <a href="dalian.html"  target="_blank">信息大连</a>
  	        		</li>
  	        		<li class="navLi" style="padding:0px; background-color:transparent;">
- 	        		    <a href="javascript:void(0)"  target="_self">会议信息</a>
- 	        		    <span class="navArr sp" style="right:0px;"></span>
- 	        		    <ul class="sonU1" style="display: none;">
+ 	        		    <a href="javascript:void(0)"  target="_self">会议信息</a> 
+ 	        		    <ul>
  	        		    	<li>
  	        		    		<a href="meetntrodut" target="_blank">大会介绍</a>
  	        		    	</li>
