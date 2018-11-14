@@ -1,175 +1,616 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>2019iske</title>
-<link rel="apple-touch-icon" href="../images/apple-icon.png" />
-<style type="text/css">
-element.style {
-    padding: 0px;
-    background-color: transparent;
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ISKE2019</title>
+<meta name="keywords" content="ISKE2019"/>
+<meta name="description" content="智能系统与知识工程国际会议"/>
+<meta name="author" content="lnnu"/>
+<meta content="telephone=no" name="format-detection"/>
+<link rel="apple-touch-icon" href="logo链接" />
+<link rel="shortcut icon" href="logo链接" type="image/x-icon">
+<script type="text/javascript">
+var h = window.location.host;
+var a = window.location.href;
+if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios|SymbianOS)/i)&&!a.match("m2pc")){
+	    document.write('<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">')
+		setActiveStyleSheet("//localhost:8080/test1.0/webroot/css/md2803all.css");
+		setActiveStyleSheet("//localhost:8080/test1.0/webroot/css/md2803index.css");
+}else{
+	document.write('<meta name="viewport" content="width=1000, maximum-scale=1, user-scalable=no">')
+    setActiveStyleSheet("//localhost:8080/test1.0/webroot/css/d2803all.css");
+    setActiveStyleSheet("//localhost:8080/test1.0/webroot/css/d2803index.css");
 }
-.topbar {
-    width: 100%;
-    height: 123px;
-    position: relative;
-    z-index: 100;
-}
-.topbar .topLine {
-    width: 100%;
-    height: 3px;
-    background: url(../imgs/d2803bg2.jpg) no-repeat top center;
-}
-.topbar .box {
-    width: 100%;
-    height: 123px;
-    background-color: #efefef;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.topbar .navbar {
-    width: 900px;
-    height: 120px;
-    line-height: 120px;
-    position: absolute;
-    top: 3px;
-    left: 50%;
-    margin-left: -455px;
-}
-.topbar .box.top.logoRight {
-    width: 111px;
-    height: 48px;
-    background-position: -196px -159px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: 509px;
-    margin-top: -24px;
-}
-a:hover {
-    color: #039;
-}
-.sp {
-    background:url("../WEB-INF/imgs/nnusymbol.jpg" );
-    background-repeat:no-repeat;
-}
-.topbar .navbar .nav .navLi {
-    width: 85px;
-    position: relative;
-    
-}
-.topbar .navbar .nav>li {
-    float: left;
-    height: 120px;
-    font-size: 16px;
-    margin-left: 35px;
-    cursor: pointer;
-    
-}
-.navbar ul, li {
-    list-style: none outside none;
-    
-}
-
-.navbar li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    
-}
-.navbar ul li ul{position:absolute;display:none;top:60px;padding-bottom:15px;left:-35px;}
-.navbar ul li ul li{width:120px;float:left;position:relative;margin:none;padding:0px;}
-.navbar ul li ul li a{border-right:none;border-top:1px;}
-.navbar ul li:hover ul{
-	display:block;
-}
-.navLi{
-	position:absolute;
-	padding:0px;
-	background-color:transparent;
-}
-.navLi li{
-	line-height:36px;}
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-* {
-    font-family: "Microsoft Yahei", 微软雅黑, Tahoma, SimSun;
-    margin: 0px auto;
-    padding: 0px;
-    outline: 0px;
-}
-div {
-    display: block;
-}
-body {
-    font-size: 14px;
-    color: #333;
-}
-
-</style>
+function setActiveStyleSheet(filename){document.write("<link href="+filename+" rel=stylesheet>");}
+</script>
 </head>
 <body>
-<!-- topbar begin -->
- 	<div class="topbar" >
- 		<div class="box"  style="position:fixed;">
- 	        <div class="top">
- 	           <!-- 移动菜单栏 -->
- 	             <div class="menuBtn">
- 	                  <span class="menuBtnIcon"></span>
- 	              </div>
- 	              <!-- 彩线 -->
- 	              <div class="topline"></div>
- 	              <!-- 左logo -->
- 	              <a href="first.html" target="_blank" class="sp logoLeft"></a>
- 	              <!-- 右logo -->
- 	              <a href="first.html" target="_blank" class="sp logoRight"></a>
- 	        </div>
- 	        <div class="navbar">
- 	        	<ul class="nav">
- 	        		<li>
- 	        			<a href="first.html"  target="_blank">首页</a>
- 	        		</li>
- 	        		<li>
- 	        		    <a href="meeting.html"  target="_blank">大会议程</a>
- 	        		</li>
- 	        		<li>
- 	        			<a href="news.html"  target="_blank">新闻中心</a>
- 	        		</li>
- 	        		<li>
- 	        			<a href="achievement.html"  target="_blank">成果发布</a>
- 	        		</li>
- 	        		<li>
- 	        			<a href="show.html"  target="_blank">展会博览</a>
- 	        		</li>
- 	        		<li>
- 	        		    <a href="dalian.html"  target="_blank">信息大连</a>
- 	        		</li>
- 	        		<li class="navLi" style="padding:0px; background-color:transparent;">
- 	        		    <a href="javascript:void(0)"  target="_self">会议信息</a> 
- 	        		    <ul>
- 	        		    	<li>
- 	        		    		<a href="meetntrodut" target="_blank">大会介绍</a>
- 	        		    	</li>
- 	        		    	<li>
- 	        		    		<a href="traffic" target="_blank">交通指南</a>
- 	        		    	</li>
- 	        		    	<li>
- 	        		    		<a href="life" target="_blank">生活信息</a>
- 	        		    	</li>
- 	        		    </ul>
- 	        	   </li>	   
-               </ul>
-         </div>
- 		</div>
- 	</div>  
+<!--topBar Begin-->
+<div class="topbar">
+	<div class="box">
+		<div class="top">
+			<!--移动端菜单线-->
+			<div class="menuBtn">
+		      <span class="menuBtnIcon"></span>
+		    </div>
+			<!--彩线-->
+			<div class="topLine"></div>
+			<!--左logo-->
+			<a href="//localhost:8080/test1.0/webroot/index.jsp" target="_blank" class="logoLeft"></a>
+		<!--右logo--><a href="//localhost:8080/test1.0/webroot/index.jsp" target="_blank" class=" sp2 logoRight">    <img src="//localhost:8080/test1.0/webroot/imgs/20181022094655.jpg" width="127" height="120"  style="background-repeat: no-repeat; background-attachment: fixed; background-position: 100% 0%"/></a></div>
+		<!--搜索-->
+		<div class="searchBtn sp"></div>
+		<div class="searchBox">
+			<form action="javascript:search()" id="searchForm" name="searchForm" method="post" target="_blank">
+				<div class="search cf">
+					<input type="text" placeholder="请输入搜索内容" name="q" size="10" id="q" class="inputTxt" />
+					<input type="submit" name="Submit" value="" id="Submit" class="inputBtn sp" />
+					<input name="s" type="hidden" id="s" value="12733647345932784401" />  
+					<input name="nsid" type="hidden" value="0" />
+				  <span class="closeBtn"><div class="icon sp"></div></span>
+				</div>
+			</form>
+			<script type="text/javascript">
+				function search(){
+					var u = navigator.userAgent;
+					var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+					var urlstr = 'http://zhannei.baidu.com/cse/search?s=12733647345932784401&entry=1&q='+document.getElementById('q').value;
+					if(isiOS){
+						window.location.href = urlstr ;
+					}else{
+						window.open(urlstr) ;
+					}
+				}
+			</script>
+		</div>
+		<!--nav begin-->
+		<div class="navbar">
+			<ul class="nav">
+				
+					<li><a href="//localhost:8080/test1.0/webroot/index.jsp" target="_blank">Home</a></li><!-- 首页 -->
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366179.html" target="_blank">Agenda</a></li><!-- 大会议程 -->
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366195.html" target="_blank">Media Center</a></li><!-- 新闻中心 -->
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366200.html" target="_blank">Publication</a></li><!-- 成果发布 -->
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366215.html" target="_blank">Referees</a></li><!-- 评判者 -->
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366226.html" target="_blank">Dalian</a></li><!-- 信息大连 -->
+								
+				<li class="navLi">
+					<a href="javascript:void(0)" target="_self">Congress</a><!--会议信息    -->
+					<span class="navArr sp"></span>
+					<ul class="sonUl">
+						
+							<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366346.html" target="_blank">About ISKE</a></li><!--大会介绍  -->
+						
+							<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366496.html" target="_blank">Traffic Guide</a></li><!--交通指南  -->
+						
+							<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366402.html" target="_blank">Living Guide</a></li><!--生活信息   -->
+							
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--nav end-->
+	</div>
+</div>
+<!--topBar End-->
+<!--banner begin-->
 
-<!-- topbar end -->
+<!--  <img src="//localhost:8080/test1.0/webroot/imgs/topbar.jpg" width="100%" height="430" background="#222"/></div>-->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_2--after" style="background-image: url(http://localhost:8080/test1.0/webroot/imgs/topbar.jpg);width:100%;height:430px; background-repeat:no-repeat;">
+      <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">
+        <div class="g-mb-100">
+          <a href="https://www.kdd.org/kdd2018/registration" target="_blank" class="btn btn-md u-btn-blue g-mt-30 g-mr-30 g-mb-15">Register Now</a> 
+          <a href="https://whova.com/webapp/e/kdd_201808/" target="_blank" class="btn btn-md u-btn-blue g-mt-30 g-mr-30 g-mb-15">Get Whova</a>
+
+     </div>
+
+      </div>
+    </section>
+   
+<!--  <div class="banner doAnimation mb50">-->
+<!--banner end-->
+<!--要闻区 begin-->
+<div class="wrap">
+	<div class="box mb40 cf">
+		<div id = "widget12511" style="" class="left fl">
+	<!--头条-->
+	
+	<h3 class="bigNews"><a href="//localhost:8080/test1.0/webroot/t20180928_8379090.html" target="_blank">iske将于11月7日至9日举行</a></h3>
+	
+	<!--配稿-->
+	<ul class="smallNews mb20 cf">
+					
+				<li><a href="//www.wicwuzhen.cn/web18/news/Live/201809/t20180927_8369595.html" target="_blank">[直播回放｜第五届世界互联网大会新闻发布会]</a></li>
+				
+	<!--  	<li><a href="//www.wicwuzhen.cn/web18/news/201809/t20180928_8378420.shtml" target="_blank">[活动越来越丰富 大会效应越来越凸显]</a></li>
+							
+				<li><a href="//www.wicwuzhen.cn/web18/news/201809/t20180928_8379178.shtml" target="_blank">[嘉宾重磅、新科技首发 第五届世界互联网大会"剧透"来了]</a></li>
+				
+				<li><a href="//www.wicwuzhen.cn/web18/news/pic/201809/t20180928_8377980.shtml" target="_blank">[乌镇互联网国际会展中心二期英姿勃发]</a></li>
+		-->			
+	</ul>
+	<!--最新动态-->
+	
+	<div class="leftTitBar mb10"><a href="//localhost:8080/test1.0/webroot/notice.html" target="_blank">Important dates</a></div>
+	
+	<ul class="latestNews">			
+			
+				<li><a href="//www.wicwuzhen.cn/web18/release/notice/201809/t20180930_8395531.shtml" target="_blank">关于参观第五届世界互联网大会“互联网之光”博览会的通知</a><span class="time">2018-09-30</span></li>			
+				
+				<li><a href="//www.wicwuzhen.cn/web18/release/notice/201809/t20180926_8355563.shtml" target="_blank">关于征集参加第五届世界互联网大会“领先科技成果发布活动”相关成果的通知</a><span class="time">2018-07-10</span></li>
+						
+				<li><a href="//www.wicwuzhen.cn/web18/release/notice/201809/t20180926_8355564.shtml" target="_blank">关于第五届世界互联网大会·互联网之光博览会有关事项的预通知</a><span class="time">2018-07-05</span></li>
+								
+	</ul>
+</div><!--碎片化管理:d2803yw_1537878139686-->
+		<div class="right fr">
+			<!--功能按钮-->
+			<ul class="funButton">
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8367486.html" target="_blank"><span class="icon1 sp"></span>Registration</a></li><!-- 注册／登录  -->
+				
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366179.html" target="_blank"><span class="icon2 sp"></span>Schedue</a></li><!-- 会议日程 -->
+				
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8367668.html" target="_blank"><span class="icon3 sp"></span>Call for papers</a></li><!-- 领先成果征集入口  -->
+				
+				
+					<li><a href="//localhost:8080/test1.0/webroot/t20180927_8366496.html" target="_blank"><span class="icon4 sp"></span>Traffic guide</a></li><!--交通信息   -->
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<!--要闻区 end-->
+<!--滚动图片及前沿动态 begin-->
+<div class="wrap1" style="display: none;">
+	<div class="box cf">
+		<div id = "widget12513" style="" class="left fl">
+	<div class="swiper-container wrap1Swiper">
+		<div class="swiper-wrapper">
+			
+			
+			<div class="swiper-slide">
+				<h4 class="egBgk">
+					<a href="//localhost:8080/test1.0/webroot/t20180930_8395531.html" target="_blank">关于参观第五届世界互联网大会“互联网之光”博览会的通知</a>
+				</h4>
+			</div>
+			
+			<div class="swiper-slide">
+				<a href="//localhost:8080/test1.0/webroot/t20180928_8377980.html" target="_blank">
+					<img src="//localhost:8080/test1.0/webroot/imgs/20181022093916.jpg" alt="【高清图集】乌镇互联网国际会展中心二期英姿勃发" />
+				</a>
+				<h4 class="egBgk">
+					<a href="//localhost:8080/test1.0/webroot/t20180928_8377980.html" target="_blank">【高清图集】乌镇互联网国际会展中心二期英姿勃发</a>
+				</h4>
+			</div>
+			
+			<div class="swiper-slide">
+				<a href="//www.wicwuzhen.cn/web18/news/Live/201809/t20180927_8369595.shtml" target="_blank">
+					<img src="/15658/201809/W020181003608155117287.jpg" alt="【直播】第五届世界互联网大会新闻发布会" />
+				</a>
+				<h4 class="egBgk">
+					<a href="//www.wicwuzhen.cn/web18/news/Live/201809/t20180927_8369595.shtml" target="_blank">【直播】第五届世界互联网大会新闻发布会</a>
+				</h4>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+</div><!--碎片化管理:d2803qydtright_1537879047893-->
+	</div>
+</div>
+<!--滚动图片及前沿动态 end-->
+<!--大咖访谈 begin-->
+<div class="wrap2">
+	<div class="innerWrap2">
+		<div id = "widget12518" style="" class="box">
+	
+		<div class="titbar2 mb40"><a href="//localhost:8080/test1.0/webroot/talk.html" target="_blank">Keynote<span> Speakers</span></a></div><!-- 大咖访谈/主讲嘉宾 -->
+	
+	<ul class="bigName cf">
+				
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8358084.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928175421.jpg" alt="鲁乙己：中国应成为首个建立5G网络的国家" />
+				<h3 class="title"><div class="text">鲁乙己：中国应成为首个建立5G网络的国家</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//localhost:8080/test1.0/webroot/t20180927_8358550.html" target="_blank">
+				<img src="/15658/201809/W020180927539929241321.jpg" alt="比尔·莫兰：中国基础科学突破显著" />
+				<h3 class="title"><div class="text">比尔·莫兰：中国基础科学突破显著</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8358332.shtml" target="_blank">
+				<img src="/15658/201809/W020180927563805126082.jpg" alt="内森·布莱卡斯亚克：中国最有可能成为创新者" />
+				<h3 class="title"><div class="text">内森·布莱卡斯亚克：中国最有可能成为创新者</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8360400.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928592806.jpg" alt="马云：网络传播须把社会责任放第一" />
+				<h3 class="title"><div class="text">马云：网络传播须把社会责任放第一</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8359704.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928374433.jpg" alt="罗伯特·卡恩：共同家园需要共同管理" />
+				<h3 class="title"><div class="text">罗伯特·卡恩：共同家园需要共同管理</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8359204.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928284552.jpg" alt="邬贺铨：浙江互联网发展领先全国" />
+				<h3 class="title"><div class="text">邬贺铨：浙江互联网发展领先全国</div></h3>
+			</a>
+		</li>
+		
+		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8359648.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928792198.jpg" alt="维纳·措恩：中国互联网发展正从量变走向质变" />
+				<h3 class="title"><div class="text">维纳·措恩：中国互联网发展正从量变走向质变</div></h3>
+			</a>
+		</li>
+		
+ 		<li>
+			<a href="//www.wicwuzhen.cn/web18/news/talk/201809/t20180926_8360513.shtml" target="_blank">
+				<img src="/15658/201809/W020180927539928990974.jpg" alt="马化腾：互联网产业走出中国道路" />
+				<h3 class="title"><div class="text">马化腾：互联网产业走出中国道路</div></h3>
+			</a>
+		</li>
+	
+		
+		<!--白色间距-->
+		<li class="line1"></li>
+		<li class="line2"></li>
+		<li class="line3"></li>
+	</ul>
+</div><!--碎片化管理:d2803dkft_1537879741404-->
+	</div>
+</div>
+<!--大咖访谈 end-->
+<!-- 领先成果 start -->
+<div id="widget12524" style="" class="wrap4">	
+	
+	<div class="titbar4 mb40"><a href="http://www.wicwuzhen.cn/web18/achievements/" target="_blank">2017领先<span>成果</span></a></div>
+	
+	<div class="wrap4Box">
+		<div class="swiper-container wrap4Swiper">
+		    <div class="swiper-wrapper" style="padding-left: 532px; padding-right: 532px; transform: translate3d(0px, 0px, 0px); transition-duration: 0.2s; width: 3990px; height: 418px;">
+		    	
+				
+			      <div class="swiper-slide swiper-slide-visible swiper-slide-active">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407860.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606079661490.jpg" alt="微软小冰">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">微软小冰</span>
+			      			<span class="wrap4Abs">微软 Microsoft Corporation</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide swiper-slide-visible">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407866.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606079708035.jpg" alt="华为3GPP 5G预商用系统">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">华为3GPP 5G预商用系统</span>
+			      			<span class="wrap4Abs">华为技术有限公司</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide swiper-slide-visible">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407865.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606079744486.jpg" alt="摩拜无桩智能共享单车">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">摩拜无桩智能共享单车</span>
+			      			<span class="wrap4Abs">摩拜单车</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407871.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606079857270.jpg" alt="高通基于面向移动终端的5G调制解调器芯片组">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">高通基于面向移动终端的5G调制解调器芯片组</span>
+			      			<span class="wrap4Abs">美国高通 Qualcomm</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407870.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606079899113.jpg" alt="基于大数据的新一代移动出行平台">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">基于大数据的新一代移动出行平台</span>
+			      			<span class="wrap4Abs">滴滴出行</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407869.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606080894611.jpg" alt="AR Kit">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">AR Kit</span>
+			      			<span class="wrap4Abs">苹果公司</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407868.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606081891018.jpg" alt="“神威·太湖之光”">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">“神威·太湖之光”</span>
+			      			<span class="wrap4Abs">国家超级计算无锡中心</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407882.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606082896479.jpg" alt="阿里云ET大脑">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">阿里云ET大脑</span>
+			      			<span class="wrap4Abs">阿里云计算有限公司</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407883.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606083909035.jpg" alt="AWS Greengrass">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">AWS Greengrass</span>
+			      			<span class="wrap4Abs">亚马逊 Amazon</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407884.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606083930012.jpg" alt="DuerOS对话式人工智能系统">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">DuerOS对话式人工智能系统</span>
+			      			<span class="wrap4Abs">百度公司</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407885.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606084963203.jpg" alt="特斯拉垂直整合能源解决方案">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">特斯拉垂直整合能源解决方案</span>
+			      			<span class="wrap4Abs">Tesla Inc.</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407886.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606086057429.jpg" alt="北斗卫星导航系统">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">北斗卫星导航系统</span>
+			      			<span class="wrap4Abs">中国卫星导航系统管理办公室</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407887.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003606087166264.jpg" alt="Arm安全架构">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">Arm安全架构</span>
+			      			<span class="wrap4Abs">Advanced RISC Machines</span>
+			      		</a>
+			      </div>
+			      
+			      <div class="swiper-slide">
+			      		<a href="//www.wicwuzhen.cn/web18/achievements/lxcg/201810/t20181003_8407842.shtml" target="_blank">
+			      			<span class="wrap4Img">
+			      				<img src="/15658/201809/W020181003561239873077.jpg" alt="光量子计算原型机">
+			      			</span>
+			      			
+			      			<span class="wrap4Tit">光量子计算原型机</span>
+			      			<span class="wrap4Abs">中国科学技术大学</span>
+			      		</a>
+			      </div>
+			      
+				
+		    </div>
+		</div>
+		<a class="wrap4arr wrap4L" href="javascript:void(0)" target="_self" style="opacity: 0.8; display: none;"><span class="sp wrap4Lspan"></span></a>
+		<a class="wrap4arr wrap4R" href="javascript:void(0)" target="_self" style="opacity: 0; display: none;"><span class="sp wrap4Rspan"></span></a>
+	</div>
+</div>
+
+
+<!-- 领先成果end -->
+
+
+<!--精彩图集 begin-->
+<div class="wrap6 cf">
+	<div class="swiper-container gqSwiper">
+		<div id = "widget12509" style="" class="swiper-wrapper">
+	
+	
+	<div class="swiper-slide">
+		<img src="//localhost:8080/test1.0/webroot/imgs/20181022093916.jpg" alt="乌镇互联网国际会展中心" />
+		<div class="gqtjImg"></div>
+		<div class="gqtxt">
+			<a href="http://www.wicwuzhen.cn/web18/news/pic/201809/t20180928_8377980.shtml" target="_blank" class="gqLink"></a>
+			<h5><a href="http://www.wicwuzhen.cn/web18/news/pic/201809/t20180928_8377980.shtml" target="_blank">精彩图集</a></h5>
+			<h4><a href="http://www.wicwuzhen.cn/web18/news/pic/201809/t20180928_8377980.shtml" target="_blank">精彩图集</a></h4>
+			<p><a href="http://www.wicwuzhen.cn/web18/news/pic/201809/t20180928_8377980.shtml" target="_blank">乌镇互联网国际会展中心</a></p>
+		</div>
+	</div>
+	
+	<div class="swiper-slide">
+		<img src="//localhost:8080/test1.0/webroot/imgs/20181022092213.png" alt="第四届世界互联网大会开幕式" />
+		<div class="gqtjImg"></div>
+		<div class="gqtxt">
+			<a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171203_5906622.shtml" target="_blank" class="gqLink"></a>
+			<h5><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171203_5906622.shtml" target="_blank">往届瞬间</a></h5>
+			<h4><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171203_5906622.shtml" target="_blank">往届瞬间</a></h4>
+			<p><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171203_5906622.shtml" target="_blank">第四届世界互联网大会开幕式</a></p>
+		</div>
+	</div>
+	
+	<div class="swiper-slide">
+		<img src="//localhost:8080/test1.0/webroot/imgs/20181022092208.jpg" alt="无人超市亮相“乌镇峰会”" />
+		<div class="gqtjImg"></div>
+		<div class="gqtxt">
+			<a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171202_5895519.shtml" target="_blank" class="gqLink"></a>
+			<h5><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171202_5895519.shtml" target="_blank">往届瞬间</a></h5>
+			<h4><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171202_5895519.shtml" target="_blank">往届瞬间</a></h4>
+			<p><a href="http://2017.wicwuzhen.cn/web17/news/pic/201712/t20171202_5895519.shtml" target="_blank">无人超市亮相“乌镇峰会”</a></p>
+		</div>
+	</div>
+	
+	
+</div><!--碎片化管理:d2803jctj_1537876563024-->
+		<div class="anniu">
+			<a href="javascript:void(0)" class="arrow5 arrow5L sp"></a>
+			<a href="javascript:void(0)" class="arrow5 arrow5R sp"></a>
+		</div>
+	</div>
+</div>
+<!--精彩图集 end-->
+<!--历届展示 begin-->
+<div class="wrap7">
+	<div id = "widget12507" style="" class="box">
+	
+	<div class="titbar7 mb40"><a href="" target="_blank">Tutorial <span>Speakers</span></a></div><!-- 教程演讲者 -->
+
+<div type="ul" class="imgList" id="sm">
+	
+	
+    <li>
+        <a href="//localhost:8080/test1.0/webroot/index.jsp"  target="_blank">
+            <div class="titbar">
+                <span>2014</span>               
+            </div>
+            <div class="titbar1">
+            	<div class="titbar1Bg">
+            		<span>首届世界互联网大会</span>
+            	</div>           	
+            </div>
+            <div class="imgBg" style="background: url(/15658/201809/W020180928407833258693.jpg) no-repeat  center 0;"></div>
+        </a>
+    </li>
+    
+    <li>
+        <a href="//2015.wicwuzhen.cn"  target="_blank">
+            <div class="titbar">
+                <span>2015</span>               
+            </div>
+            <div class="titbar1">
+            	<div class="titbar1Bg">
+            		<span>第二届世界互联网大会</span>
+            	</div>           	
+            </div>
+            <div class="imgBg" style="background: url(/15658/201809/W020180928407833349388.jpg) no-repeat  center 0;"></div>
+        </a>
+    </li>
+    
+    <li>
+        <a href="//2016.wicwuzhen.cn/"  target="_blank">
+            <div class="titbar">
+                <span>2016</span>               
+            </div>
+            <div class="titbar1">
+            	<div class="titbar1Bg">
+            		<span>第三届世界互联网大会</span>
+            	</div>           	
+            </div>
+            <div class="imgBg" style="background: url(/15658/201809/W020180928407833410323.jpg) no-repeat  center 0;"></div>
+        </a>
+    </li>
+    
+    <li>
+        <a href="//2017.wicwuzhen.cn/"  target="_blank">
+            <div class="titbar">
+                <span>2017</span>               
+            </div>
+            <div class="titbar1">
+            	<div class="titbar1Bg">
+            		<span>第四届世界互联网大会</span>
+            	</div>           	
+            </div>
+            <div class="imgBg" style="background: url(/15658/201809/W020180928463690354433.png) no-repeat  center 0;"></div>
+        </a>
+    </li>
+  	
+    <li>
+        <a href="//localhost:8080/test1.0/webroot/index.jsp"  target="_blank">
+            <div class="titbar">
+                <span>2018</span>               
+            </div>
+            <div class="titbar1">
+            	<div class="titbar1Bg">
+            		<span>首届世界互联网大会</span>
+            	</div>           	
+            </div>
+            <div class="imgBg" style="background: url(/15658/201809/W020180928407833258693.jpg) no-repeat  center 0;"></div>
+        </a>
+    </li>  
+    
+</div>
+</div><!--碎片化管理:d2803ljzs_1537876182946-->	
+</div>
+<!--历届展示 end-->
+<!--footer begin--> 
+<div class="footbar cf">
+	<div class="box">
+		
+			<h1 class="footbarLogo sp fl">智能系统与信息工程国际会议</h1>
+			<div class="listBox fl"><span class="title mb10">联系我们contact us</span>
+			<ul class="list list-paddingleft-2"><li><p><em>电话：</em>86-0571-85311391 (参会咨询)</p></li><li><p>86-0571-85800770-213 (参展咨询)</p></li><li><p><em>传真：</em>86-0571-85195207</p></li><li><p><em>QQ：</em>2092919312</p></li><li><p><em>邮箱：</em>service@wicwuzhen.cn</p></li></ul></div><div class="listBox1 fl"><span class="title mb10">合作伙伴/媒体 partner/media</span><ul class="list list-paddingleft-2"><li><p><a href="//www.weforum.org/" target="_blank">世界经济论坛</a></p></li><li><p><a href="//www.boaoforum.org/" target="_blank">博鳌亚洲论坛</a></p></li></ul></div><div class="listBox2 fr"><span class="title mb10">关注我们</span><div class="list"><a href target="_blank" class="icon sp"></a><a href target="_blank" class="icon1 sp"></a><a href target="_blank" class="icon2 sp"></a></div></div><div class="listBox3 cf">&nbsp; &nbsp;
+	©2018辽宁师范大学版权所有</div>
+		
+	</div>
+</div>
+<script id="_trs_ta_js" src="//ta.8531.cn/c/js/ta.js?mpid=166" async defer></script>
+<!--footer end--> 
+<script type="text/javascript">
+if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios|SymbianOS)/i))
+	setJs("//www.wicwuzhen.cn/web18/material/d2803/js/zepto.min.js","//www.wicwuzhen.cn/web18/material/d2803/js/md2803all.min.js","//www.wicwuzhen.cn/web18/material/d2803/js/md2803index.min.js");
+else
+	setJs("//www.wicwuzhen.cn/wicsc/material/zjoldc/js/jquery-1.12.4.min.js","//www.wicwuzhen.cn/web18/material/d2803/js/d2803all.min.js","//www.wicwuzhen.cn/web18/material/d2803/js/d2803index.min.js");
+function setJs(filename){for(var i = 0 ; i < arguments.length; i++)document.write("<script src="+arguments[i]+" type='text/javascript'></"+"script>");}
+</script>
+
 </body>
 </html>
